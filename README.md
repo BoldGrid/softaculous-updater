@@ -8,6 +8,6 @@ Also includes bgrid.sql, info.xml, and install.xml to work with Softaculous One 
 Automatically installs the Grid One Welcome Inspiration 
 https://www.boldgrid.com/
 
-Screenshot of site installed:<
-img src="http://192.249.115.150/gridone.jpg" width=100%">
+Screenshot of site installed:
+<img src="http://192.249.115.150/gridone.jpg" width=100%">
 
