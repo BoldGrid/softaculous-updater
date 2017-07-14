@@ -162,7 +162,7 @@ else
     exit
 fi
 
-wget -qO "$SCRIPT"/bgrid/info.xml  http://192.249.115.150/info.xml
+wget -qO "$SCRIPT"/bgrid/info.xml  https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/info.xml
 if [[ -e "$SCRIPT"/bgrid/info.xml ]];
 then
     echo "Retrieved current info.xml"
@@ -179,7 +179,7 @@ else
     echo "Softaculous install.xml does not exist - Something went wrong copying WordPress package" exit
 fi
 
-wget -qO "$SCRIPT"/bgrid/install.xml http://192.249.115.150/install.xml
+wget -qO "$SCRIPT"/bgrid/install.xml https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/install.xml
 if [[ -e "$SCRIPT"/bgrid/install.xml ]];
 then
     echo "Retrieved current install.xml"
@@ -193,10 +193,10 @@ if [[ -e "$SCRIPT"/bgrid/bgrid.sql ]];
 then
     echo "Updating BoldGrid SQL file"
     rm -rf "$SCRIPT"/bgrid/bgrid.sql
-    wget -qO "$SCRIPT"/bgrid/bgrid.sql http://192.249.115.150/bgrid.sql
+    wget -qO "$SCRIPT"/bgrid/bgrid.sql https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/bgrid.sql
 else
     echo "Retrieving bgrid.sql now"
-    wget -qO "$SCRIPT"/bgrid/bgrid.sql http://192.249.115.150/bgrid.sql
+    wget -qO "$SCRIPT"/bgrid/bgrid.sql https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/bgrid.sql
 fi
 
 if [[ -e "$SCRIPT"/bgrid/bgrid.sql ]];
@@ -222,7 +222,7 @@ then
     echo "Checking for TopScript Images"
 else
     echo "topscripts/bgrid.png doesnt exist, Getting TopScript images now"
-    wget -qO "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip  http://192.249.115.150/images.zip
+    wget -qO "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip  https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/images.zip
     unzip "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip
     rm -rf "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip
 fi
