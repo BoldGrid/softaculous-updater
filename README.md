@@ -1,0 +1,1 @@
+# boldgrid-pkg-softaculous-updater
