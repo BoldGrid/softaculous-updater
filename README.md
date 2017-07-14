@@ -1,7 +1,7 @@
 # boldgrid-pkg-softaculous-updater
 <img src="https://www.boldgrid.com/assets/logos/boldgrid-logo-horizontal-white-lg.png" width="100%">
 Screenshot of installed site:
-<img src="http://192.249.115.150/gridone.jpg" width=100%">
+<img src="https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/gridone.jpg" width=100%">
 Created July 6th, 2017 for BoldGrid.com 
 
 
