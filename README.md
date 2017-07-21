@@ -1,3 +1,4 @@
+![ScreenShot](https://www.boldgrid.com/assets/logos/boldgrid-logo-horizontal-black-lg.png)
 # BoldGrid Custom Softaculous Package Updater
 
 This is an example bash script for both creating and maintaining the BoldGrid custom package for Softaculous. This script is an example of how to automate the process for your server, and the steps are explained in this guide: https://www.boldgrid.com/support/advanced-tutorials/how-to-add-boldgrid-as-a-custom-softaculous-package/
@@ -8,7 +9,7 @@ Since this is an example script, it is not meant to be deployed on a production 
 
 This script also includes bgrid.sql, info.xml, and install.xml to work with Softaculous One Click Installer, and Automatically installs the Grid One Welcome Inspiration when a user installs the custom script on their domain from Softaculous.
 
-<img src="https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/gridone.jpg" width=100%">
+![ScreenShot](https://raw.githubusercontent.com/harryjackson1221/boldgrid-pkg-softaculous-updater/master/gridone.jpg)
 
 ### Prerequisites
 
