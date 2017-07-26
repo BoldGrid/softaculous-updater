@@ -235,5 +235,9 @@ else
     exit
 fi
 
+#Turning on Show custom script(s) logo in TOP scripts. This can get disabled during cPanel/Softaculous updates
+sed -i '/show_cscript_in_top/s/0/1/g' "$SOFTPATH"/enduser/universal.php
+
+
 echo "All done! Your Custom BoldGrid Package for Softaculous should now be working! Make sure you select Show custom script(s) logo in TOP scripts in your Softaculous General Settings"
 exit
