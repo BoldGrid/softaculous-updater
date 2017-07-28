@@ -219,6 +219,7 @@ fi
 #Check/get for topscript images
 if [[ -e "$SOFTPATH"/enduser/themes/default/images/topscripts/bgrid.png ]];
 then
+    mkdir -p "$SOFTPATH"/enduser/themes/default/images/topscripts
     echo "Checking for TopScript Images"
 else
     echo "topscripts/bgrid.png doesnt exist, Getting TopScript images now"
