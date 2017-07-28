@@ -216,13 +216,20 @@ else
     exit
 fi
 
+if [[ -d "$SOFTPATH"/enduser/themes/default/images/topscripts ]]; then
+    echo "topscripts Directory Already Exists, Checking the Images"
+else
+    mkdir -p "$SOFTPATH"/enduser/themes/default/images/topscripts
+    echo "topscripts Directory Does Not Exist, Creating the package"
+fi
+
+
 #Check/get for topscript images
 if [[ -e "$SOFTPATH"/enduser/themes/default/images/topscripts/bgrid.png ]];
 then
     echo "Checking for TopScript Images"
 else
     echo "topscripts/bgrid.png doesnt exist, Getting TopScript images now"
-    mkdir -p "$SOFTPATH"/enduser/themes/default/images/topscripts
     wget -qO "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip  https://raw.githubusercontent.com/BoldGrid/softaculous-updater/master/images.zip
     unzip "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip
     rm -rf "$SOFTPATH"/enduser/themes/default/images/topscripts/images.zip
