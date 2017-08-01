@@ -239,7 +239,7 @@ if [[ -e "$SOFTPATH"/enduser/themes/default/images/topscripts/bgrid.png ]];
 then
     echo "TopScripts Images exist already"
 else
-    echo "Problems with TopScripts Images"
+    echo "Problems with TopScripts Images. You may need to set these up manually, which you can find information about doing so here: https://www.boldgrid.com/support/advanced-tutorials/how-to-add-boldgrid-as-a-custom-softaculous-package/"
     exit
 fi
 
