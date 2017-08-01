@@ -216,6 +216,14 @@ else
     exit
 fi
 
+if [[ -d "$SOFTPATH"/enduser/themes/default/images/topscripts ]]; then
+    echo "topscripts Directory Already Exists, Checking the Images"
+else
+    mkdir -p "$SOFTPATH"/enduser/themes/default/images/topscripts
+    echo "topscripts Directory Does Not Exist, Creating the package"
+fi
+
+
 #Check/get for topscript images
 if [[ -e "$SOFTPATH"/enduser/themes/default/images/topscripts/bgrid.png ]];
 then
@@ -231,7 +239,7 @@ if [[ -e "$SOFTPATH"/enduser/themes/default/images/topscripts/bgrid.png ]];
 then
     echo "TopScripts Images exist already"
 else
-    echo "Problems with TopScripts Images"
+    echo "Problems with TopScripts Images. You may need to set these up manually, which you can find information about doing so here: https://www.boldgrid.com/support/advanced-tutorials/how-to-add-boldgrid-as-a-custom-softaculous-package/"
     exit
 fi
 

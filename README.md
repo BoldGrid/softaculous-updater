@@ -25,7 +25,7 @@ Since this is purely an example, it is not recommended to run this on a producti
 To install this script, you would need to run the following commands:
 
 ```
-wget https://raw.githubusercontent.com/BoldGrid/softaculous-updater/master/bgpkgupdater.sh; chmod +x bgpkgupdater.sh; ./bgpkgupdater
+wget https://raw.githubusercontent.com/BoldGrid/softaculous-updater/master/bgpkgupdater.sh; chmod +x bgpkgupdater.sh; ./bgpkgupdater.sh
 ```
 
 ## Authors

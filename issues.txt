@@ -1,0 +1,5 @@
+topscripts/bgrid.png doesnt exist, Getting TopScript images now
+/usr/local/cpanel/whostmgr/docroot/cgi/softaculous/enduser/themes/default/images/topscripts/images.zip: No such file or directory
+unzip:  cannot find or open /usr/local/cpanel/whostmgr/docroot/cgi/softaculous/enduser/themes/default/images/topscripts/images.zip, /usr/local/cpanel/whostmgr/docroot/cgi/softaculous/enduser/themes/default/images/topscripts/images.zip.zip or /usr/local/cpanel/whostmgr/docroot/cgi/softaculous/enduser/themes/default/images/topscripts/images.zip.ZIP.
+Problems with TopScripts Images
+root@***[/var/www/html]# 
