@@ -207,14 +207,7 @@ else
     exit
 fi
 
-#version.php
-if [[ -e "$SCRIPT"/bgrid/version.php ]];
-then
-    echo "Version file is up to date"
-else
-    echo "Version file doesnt exist - Something went wrong copying WordPress package"
-    exit
-fi
+
 
 if [[ -d "$SOFTPATH"/enduser/themes/default/images/topscripts ]]; then
     echo "topscripts Directory Already Exists, Checking the Images"
