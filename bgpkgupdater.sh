@@ -207,8 +207,6 @@ else
     exit
 fi
 
-
-
 if [[ -d "$SOFTPATH"/enduser/themes/default/images/topscripts ]]; then
     echo "topscripts Directory Already Exists, Checking the Images"
 else
