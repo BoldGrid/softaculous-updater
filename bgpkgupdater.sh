@@ -71,13 +71,13 @@ else
 fi
 
 #Get all required plugins
-wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-editor.zip  https://repo.boldgrid.com/boldgrid-editor.zip
+wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-editor.zip  https://downloads.wordpress.org/plugin/post-and-page-builder.zip
 unzip -q "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-editor.zip -d "$SCRIPT"/bgrid/wordpress/wp-content/plugins
 if  [[ -d  "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-editor ]]; then 
     rm -f "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-editor.zip 
     echo "BoldGrid Editor Downloaded"
 else 
-        echo "Problems with getting BoldGrid Editor plugin"
+        echo "Problems with getting BoldGrid Post and Page Builder plugin"
         exit 
 fi
 
@@ -91,23 +91,23 @@ else
     exit
 fi
 
-wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-ninja-forms.zip https://repo.boldgrid.com/boldgrid-ninja-forms.zip
-unzip -q "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-ninja-forms.zip -d "$SCRIPT"/bgrid/wordpress/wp-content/plugins
-if [[ -d  "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-ninja-forms ]]; then
-    rm -f "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-ninja-forms.zip 
-    echo "BoldGrid Ninja-forms Downloaded"
+wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/wpforms-lite.zip https://downloads.wordpress.org/plugin/wpforms-lite.zip
+unzip -q "$SCRIPT"/bgrid/wordpress/wp-content/plugins/wpforms-lite.zip -d "$SCRIPT"/bgrid/wordpress/wp-content/plugins
+if [[ -d  "$SCRIPT"/bgrid/wordpress/wp-content/plugins/wpforms-lite ]]; then
+    rm -f "$SCRIPT"/bgrid/wordpress/wp-content/plugins/wpforms-lite.zip
+    echo "WPForms Lite Downloaded"
 else
-    echo "Problems with BoldGrid Ninja-forms plugin"
+    echo "Problems with WPForms Lite plugin"
     exit
 fi
 
-wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-seo.zip  https://repo.boldgrid.com/boldgrid-seo.zip
-unzip -q "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-seo.zip -d "$SCRIPT"/bgrid/wordpress/wp-content/plugins
-if [[ -d  "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-seo ]]; then
-    rm -f "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-seo.zip 
+wget -qO "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-easy-seo.zip https://downloads.wordpress.org/plugin/boldgrid-easy-seo.zip
+unzip -q "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-easy-seo.zip -d "$SCRIPT"/bgrid/wordpress/wp-content/plugins
+if [[ -d  "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-easy-seo ]]; then
+    rm -f "$SCRIPT"/bgrid/wordpress/wp-content/plugins/boldgrid-easy-seo.zip 
     echo "BoldGrid SEO Downloaded"
 else
-    echo "Problems with BoldGrid SEO plugin"
+    echo "Problems with BoldGrid Easy SEO plugin"
     exit 
 fi
 
